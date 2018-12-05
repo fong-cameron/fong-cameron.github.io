@@ -1,0 +1,650 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Define Fitness | Welcome</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<script type="text/javascript">
+          
+				function computeBMI() {
+					// user inputs
+					var height = Number(document.getElementById("height").value);
+					var heightunits = document.getElementById("heightunits").value;
+					var weight = Number(document.getElementById("weight").value);
+					var weightunits = document.getElementById("weightunits").value;
+			
+			
+					//Convert all units to metric
+					if (heightunits == "inches") height /= 39.3700787;
+					if (weightunits == "lb") weight /= 2.20462;
+			
+					//Perform calculation
+			
+					//        var BMI = weight /Math.pow(height, 2)*10000;
+					var BMI = Math.round(weight / Math.pow(height, 2) * 10000);
+			
+					//Display result of calculation
+					document.getElementById("output").innerText = Math.round(BMI * 100) / 100;
+			
+					var output = Math.round(BMI * 100) / 100
+					if (output < 18.5)
+						document.getElementById("comment").innerText = "Underweight";
+					else if (output >= 18.5 && output <= 25)
+						document.getElementById("comment").innerText = "Normal";
+					else if (output >= 25 && output <= 30)
+						document.getElementById("comment").innerText = "Obese";
+					else if (output > 30)
+						document.getElementById("comment").innerText = "Overweight";
+					// document.getElementById("answer").value = output; 
+				}
+			</script>
+		<style>
+		.signup:hover {color: white;}
+		.logo{color:black;}
+		.logo:hover{color: black;}
+			</style>
+		</head>
+		<body>
+
+			  <header id="header">
+			    <div class="container">
+			    	<div class="row header-top align-items-center">
+			    		<div class="col-lg-4 col-sm-4 menu-top-left">
+			    			<span>
+								127 Bay Street Toronto, Ontario
+			    			</span>
+			    		</div>
+			    		<div class="col-lg-4 menu-top-middle justify-content-center d-flex">
+							<a class= "logo" href= "index.html"><bold>Define Fitness</bold></a>
+							</a>			    			
+			    		</div>
+			    		<div class="col-lg-4 col-sm-4 menu-top-right">
+			    			<a class="tel" href="tel:+647-888-4890">647-888-4890</a>
+			    			<a href="tel:+647-888-4890"><span class="lnr lnr-phone-handset"></span></a>
+			    		</div>
+			    	</div>
+			    </div>	
+			    	<hr>
+			    <div class="container">	
+			    	<div class="row align-items-center justify-content-center d-flex">
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="#home">Home</a></li>
+				          <li><a href="#offer">We offer</a></li>
+				          <li><a href="#top-course">Top Courses</a></li>				          
+				          <li><a href="#schedule">Schedule</a></li>
+				          <li><a href="#trainer">Trainers</a></li>
+				          <li><a href="#plan">Plan</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>		
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1 class="text-uppercase">
+								Define Fitness: <br>
+								Healthy Living Made Simple				
+							</h1>
+							<p class="text-white text-uppercase pt-20 pb-20">
+								
+							</p>
+						</div>												
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start offer Area -->
+			<section class="offer-area section-gap" id="offer">
+				<div class="container">	
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class=" mb-10">We care about improving your health!</h1>
+							</div>
+						</div>
+					</div>									
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-offer">
+								<img class="img-fluid" src="img/o1.png" alt="">
+								<h4>Flexible Training</h4>
+								<p>
+									Find classes that will fit your busy schedule. 
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-offer">
+								<img class="img-fluid" src="img/o2.png" alt="">
+								<h4>Aerobic Training</h4>
+								<p>
+									More than just weights! Define Fitness offers different forms of exercise to meet your fitness needs. 
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-offer">
+								<img class="img-fluid" src="img/o3.png" alt="">
+								<h4>Body Building Packages</h4>
+								<p>
+									Become the next Ronnie Coleman with our exclusive body building packages. 
+								</p>
+							</div>
+						</div>												
+					</div>
+				</div>	
+			</section>
+			<!-- End offer Area -->
+			
+			<!-- Start convert Area -->
+			<section class="convert-area" id="convert">
+				<div class="container">
+					<div class="convert-wrap">
+						<div class="row d-flex justify-content-center">
+							<div class="menu-content pb-70 col-lg-8">
+								<div class="title text-center">
+									<h1 class="text-white mb-10">Calculate Your Body Mass Index</h1>
+								</div>
+							</div>
+						</div>						
+						<div class="row justify-content-center align-items-start">
+							<div class="col-lg-3 col-md-6 cols-img">
+								<input type="text" name="feet" placeholder="Your Height (inches)" class="form-control mb-20">
+							</div>
+							<div class="col-lg-3 col-md-6 cols">
+								<input type="text" name="pounds" placeholder="Your Weight (ibs)" class="form-control mb-20">
+							</div>
+							<div class="col-lg-3 col-md-6 cols">	
+								<a href="#" class="primary-btn header-btn text-uppercase">Calculate Your BMI</a>
+							</div>
+						</div>						
+					</div>
+				</div>	
+			</section>
+			<!-- End convert Area -->
+
+			<!-- Start top-course Area -->
+			<section class="top-course-area section-gap" id="top-course">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-9">
+							<div class="title text-center">
+								<h1 class="mb-10">Top Courses </h1>
+							
+							</div>
+						</div>
+					</div>											
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c1.jpg" alt="">
+								</div>
+								<span class="course-status"><a class="signup" href="tel:+647-888-4890">Call for availability</a></span>
+								<a href="tel:+647-888-4890"><h4>Running Classes <span>$100</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c2.jpg" alt="">
+								</div>
+								<span class="course-status"><a class="signup" href="tel:+647-888-4890">Call for availability</a></span>
+								<a href="tel:+647-888-4890"><h4>Weight Lifting Classes <span>$120</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c3.jpg" alt="">
+								</div>
+								<span class="course-status"><a class="signup" href="tel:+647-888-4890">Call for availability</a></span>
+								<a href="tel:+647-888-4890"><h4>Body Combat Classes <span>$135</span></h4></a>
+							</div>
+						</div>	
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c4.jpg" alt="">
+								</div>
+								<span class="course-status"><a class="signup" href="tel:+647-888-4890">Full</a></span>
+								<a href="tel:+647-888-4890"><h4>Organic Yoga Classes <span>$150</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c6.jpg" alt="">
+								</div>
+								<span class="course-status"><a class="signup" href="tel:+647-888-4890">Call for availability</a></span>
+								<a href="tel:+647-888-4890"><h4>Raw Fitness Classes <span>$120</span></h4></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-course">
+								<div class="thumb">
+									<img class="img-fluid" src="img/c5.jpg" alt="">
+								</div>
+								<span class="course-status"><a class="signup" href="tel:+647-888-4890">Almost full!</span></a>
+								<a href="tel:+647-888-4890"><h4>Body Building Classes <span>$175</span></h4></a>
+							</div>
+						</div>																		
+					</div>
+				</div>	
+			</section>
+			<!-- End top-course Area -->
+							
+
+			<!-- Start feature Area -->
+			<section class="feature-area">
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-3 feat-img no-padding">
+							<img class="img-fluid" src="img/f1.jpg" alt="">
+						</div>
+						<div class="col-lg-3 no-padding feat-txt">
+							<h6 class="text-uppercase text-white"></h6>
+							<h1>Get your Dream Body</h1>
+							<p>
+							
+							</p>
+						</div>
+						<div class="col-lg-3 feat-img no-padding">
+							<img class="img-fluid" src="img/f2.jpg" alt="">							
+						</div>
+						<div class="col-lg-3 no-padding feat-txt">
+							<h6 class="text-uppercase text-white"></h6>
+							<h1>Become a Part of the Community</h1>
+							<p>
+						
+							</p>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End feature Area -->
+
+			<!-- Start schedule Area -->
+			<section class="schedule-area section-gap" id="schedule">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Find a Program That Fits Your Schedule</h1>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="table-wrap col-lg-12">
+							<table class="schdule-table table table-bordered">
+								  <thead class="thead-light">
+								    <tr>
+								      <th class="head" scope="col">Program</th>
+								      <th class="head" scope="col">mon</th>
+								      <th class="head" scope="col">tue</th>
+								      <th class="head" scope="col">wed</th>
+								      <th class="head" scope="col">thu</th>
+								      <th class="head" scope="col">fri</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <th class="name" scope="row">Fitness Aero</th>
+								      <td>10.00 <br> 11.30</td>				      
+								      <td>10.00 <br> 11.30</td>				      
+								      <td>10.00 <br> 11.30</td>				      
+								      <td>10.00 <br> 11.30</td>				      
+								      <td>10.00 <br> 11.30</td>				      
+								    </tr>
+								    <tr>
+								      <th class="name" scope="row">Spin Class</th>
+								      <td>12.30 <br> 02.00</td>				      
+								      <td>12.30 <br> 02.00</td>				      
+								      <td>12.30 <br> 02.00</td>				      
+								      <td>12.30 <br> 02.00</td>				      
+								      <td>12.30 <br> 02.00</td>						      
+								    </tr>
+								    <tr>
+								      <th class="name" scope="row">Muscle Fit</th>
+								      <td>2.30 <br> 3.30</td>				      
+								      <td>2.30 <br> 3.30</td>				      
+								      <td>2.30 <br> 3.30</td>				      
+								      <td>2.30 <br> 3.30</td>				      
+								      <td>2.30 <br> 3.30</td>							      
+								    </tr>
+								    <tr>
+								      <th class="name" scope="row">Senior Fitness</th>
+								      <td>04.00 <br> 05.00</td>				      
+								      <td>04.00 <br> 05.00</td>				      
+								      <td>04.00 <br> 05.00</td>				      
+								      <td>04.00 <br> 05.00</td>				      
+								      <td>04.00 <br> 05.00</td>							      
+								    </tr>
+								    <tr>
+								      <th class="name" scope="row">Yoga</th>
+								      <td>06.00 <br> 07.00</td>				      
+								      <td>06.00 <br> 07.00</td>				      
+								      <td>06.00 <br> 07.00</td>				      
+								      <td>06.00 <br> 07.00</td>				      
+								      <td>06.00 <br> 07.00</td>						      
+								    </tr>					    							    							    							    
+								  </tbody>
+							</table>							
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End schedule Area -->
+			
+			
+			<!-- Start team Area -->
+			<section class="team-area section-gap" id="trainer">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Our Experienced Trainers</h1>
+							
+							</div>
+						</div>
+					</div>						
+					<div class="row justify-content-center d-flex align-items-center">
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/t1.jpg" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+									<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+									<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Ethel Davis</h4>
+							    <p>Head Trainer</p>									    	
+						    </div>
+						</div>
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/t2.jpg" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+									<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+									<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Rodney Cooper</h4>
+							    <p>Personal Trainer</p>			    	
+						    </div>
+						</div>	
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/t3.jpg" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+									<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+									<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Dora Walker</h4>
+							    <p>Spin Class Instructor</p>			    	
+						    </div>
+						</div>	
+						<div class="col-md-3 single-team">
+						    <div class="thumb">
+						        <img class="img-fluid" src="img/t4.jpg" alt="">
+						        <div class="align-items-center justify-content-center d-flex">
+									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+									<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+									<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
+						        </div>
+						    </div>
+						    <div class="meta-text mt-30 text-center">
+							    <h4>Lena Keller</h4>
+							    <p>Fitness Instructor</p>			    	
+							</div>
+						</div>																		
+					</div>
+				</div>	
+			</section>
+			<!-- End team Area -->	
+
+			<!-- Start price Area -->
+			<section class="price-area pt-100" id="plan">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Choose the Perfect Plan for you</h1>
+								
+							</div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-price">
+								<div class="top-sec d-flex justify-content-between">
+									<div class="top-left">
+										<h4>Basic</h4>
+										<p>Per <br>Month</p>
+									</div>
+									<div class="top-right">
+										<h1>$25</h1>
+									</div>
+								</div>
+								<div class="bottom-sec">
+									<p>
+										The most basic gym package. 
+									</p>
+								</div>
+								<div class="end-sec">
+									<ul>
+										<li>Access to weight room, change room, and pool</li>
+									</ul>
+									<button class="primary-btn price-btn mt-20">Call to Purchase<span class="lnr lnr-arrow-right"></span></button>
+								</div>								
+							</div> 
+						</div>
+						<div class="col-lg-4">
+							<div class="single-price">
+								<div class="top-sec d-flex justify-content-between">
+									<div class="top-left">
+										<h4>Intermediate</h4>
+										<p>Per <br>Month</p>
+									</div>
+									<div class="top-right">
+										<h1>$50</h1>
+									</div>
+								</div>
+								<div class="bottom-sec">
+									<p>
+									For those looking to gain experience through group training. 
+									</p>
+								</div>
+								<div class="end-sec">
+									<ul>
+										<li>Access to weight room, change room, and pool</li>
+										<li>Access to group training sessions</li>
+									</ul>
+									<button class="primary-btn price-btn mt-20">Call to Purchase<span class="lnr lnr-arrow-right"></span></button>
+								</div>								
+							</div> 
+						</div>	
+						<div class="col-lg-4">
+							<div class="single-price">
+								<div class="top-sec d-flex justify-content-between">
+									<div class="top-left">
+										<h4>Ultimate</h4>
+										<p>Per <br>Month</p>
+									</div>
+									<div class="top-right">
+										<h1>$75</h1>
+									</div>
+								</div>
+								<div class="bottom-sec">
+									<p>
+										For those looking to get personal training
+									</p>
+								</div>
+								<div class="end-sec">
+									<ul>
+										<li>Access to weight room, change room, and pool</li>
+										<li>Access to group training sessions</li>
+										<li>Access to 1 on 1 personal training sessions</li>
+									</ul>
+									<button class="primary-btn price-btn mt-20">Call to Purchase<span class="lnr lnr-arrow-right"></span></button>
+								</div>								
+							</div> 
+						</div>							
+																						
+					</div>
+				</div>	
+			</section>
+			<!-- End price Area -->			
+
+			<!-- Start brand Area -->
+			<section class="brand-area section-gap">
+				<div class="container">
+					<div class="row logo-wrap">
+							
+								<img class="d-block mx-auto" src="img/l1.png" alt="">
+						
+								<img class="d-block mx-auto" src="img/l2.png" alt="">
+							</a>
+						
+								<img class="d-block mx-auto" src="img/l3.png" alt="">
+							</a>
+							
+								<img class="d-block mx-auto" src="img/l4.png" alt="">
+							</a>
+							
+								<img class="d-block mx-auto" src="img/l5.png" alt="">
+							</a>
+					</div>	
+				</div>	
+			</section>
+			<!-- End brand Area -->		
+
+			<!-- Start callto Area -->
+			<!-- End callto Area -->
+			
+
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>About Us</h4>
+								<p>
+									Define Fitness is a inclusive gym, where our goal is to simplify healthy living for you. 
+									<P><bold>Located at:</bold> 127 Bay Street Toronto, Ontario M4V 3K1</P>
+							</div>
+						</div>
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>Contact Us</h4>
+								<p>
+									Contact us if you have any questions or concerns. 
+								</p>
+								<p class="number">
+									647-888-4890 <br>
+									
+								</p>
+								<p>Or email us at <a href="mailto:cam64cam@gmail.com">definefitness@gmail.com</a></p>
+							</div>
+						</div>						
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4>Newsletter</h4>
+								<p>You can trust us. we only send offers, not a single spam.</p>
+								<div class="d-flex flex-row" id="mc_embed_signup">
+
+
+									  <form class="navbar-form" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+									    <div class="input-group add-on">
+									      	<input class="form-control" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+											<div style="position: absolute; left: -5000px;">
+												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											</div>
+									      <div class="input-group-btn">
+									        <a href="mailto:cam64cam@gmail.com"></a><button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
+									      </div>
+									    </div>
+									      <div class="info mt-20"></div>									    
+									  </form>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="footer-bottom row">
+						<p class="footer-text m-0 col-lg-6">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+						<div class="footer-social col-lg-6">
+							<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
+							<a href="https://www.behance.net/"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>			
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
+
+
+
